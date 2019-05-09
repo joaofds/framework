@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     @include('includes.head')
-    
+
 </head>
 <body>
     <div class="container">
@@ -12,8 +12,9 @@
 
         <footer class="row">
             @include('includes.footer')
+            
         </footer>
     </div>
-    @include('includes.footerjs')
+@include('includes.footerjs')
 </body>
 </html>
