@@ -11,7 +11,6 @@
 */
 
 $routes[] = ['/', 'HomeController@index'];
-$routes[] = ['/teste', 'TesteController@index'];
 $routes[] = ['/posts', 'PostsController@index'];
 $routes[] = ['/post/{id}/show', 'PostsController@show'];
 

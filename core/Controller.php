@@ -2,36 +2,30 @@
 
 namespace Core;
 
+use Philo\Blade\Blade;
+
 /**
- * Classe Controller principal. Todos os nossos Controllers, herdarão
- * seus atributos e métodos.
+ * Classe Controller que trata nossas views do
+ * Blade Template Engine.
  */
 
 abstract class Controller
 {
-    protected $view;
-    private $viewPath;
+    /**
+     * Função que renderiza uma página
+     * 
+     * $page Nome da página para renderizar
+     * $param Array com os parametros para passar para página
+     */
 
-    public function __construct()
+    public function view($page, $param = [])
     {
-        $this->view = new \stdClass; //Cria objeto anônimo.
+        // Informa o diretório das views e cache
+        $viewPath = "../resources/views";
+        $cacheDir = "../temp/blade/cache";
+        $blade  = new Blade($viewPath, $cacheDir);
         
-    }
-
-    // Método que renderiza a View.
-    protected function viewRender($viewPath)
-    {
-        $this->viewPath = $viewPath;
-        $this->content();
-    }
-
-    // Método que pega o conteúdo da View.
-    protected function content()
-    {
-        if (file_exists(__DIR__."/../resources/views/{$this->viewPath}.phtml")) {
-            require_once __DIR__."/../resources/views/{$this->viewPath}.phtml";
-        } else {
-            echo "Error: View Path not found!";
-        }
+        // Renderiza a página
+        echo $blade->view()->make($page, $param)->render();
     }
 }

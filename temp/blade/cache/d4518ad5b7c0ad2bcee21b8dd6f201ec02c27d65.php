@@ -1,0 +1,1 @@
+navbar<?php /**PATH /home/joaofds/Documentos/projetos/framework/resources/views/includes/navbar.blade.php ENDPATH**/ ?>

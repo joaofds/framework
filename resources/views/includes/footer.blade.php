@@ -1,0 +1,1 @@
+<div id="copyright text-right">© Copyright 2019 - João Ferreira | jo4o.fds@gmail.com</div>

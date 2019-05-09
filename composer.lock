@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e1e2aa52d95dd2839581c6837db35278",
+    "content-hash": "a9055e22c3fd56192aa95133b1938e2b",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -124,12 +124,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "f2eef632ab5a61cdd6653aac1c1056410de115f4"
+                "reference": "def5836923a438c0e52147d626653646abbe59ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/f2eef632ab5a61cdd6653aac1c1056410de115f4",
-                "reference": "f2eef632ab5a61cdd6653aac1c1056410de115f4",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/def5836923a438c0e52147d626653646abbe59ef",
+                "reference": "def5836923a438c0e52147d626653646abbe59ef",
                 "shasum": ""
             },
             "require": {
@@ -160,7 +160,7 @@
             ],
             "description": "The Illuminate Contracts package.",
             "homepage": "https://laravel.com",
-            "time": "2019-05-05T01:12:20+00:00"
+            "time": "2019-05-08T15:31:00+00:00"
         },
         {
             "name": "illuminate/events",
@@ -213,12 +213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
-                "reference": "9b8cd2cbf2751bbba2f936af7b7085475285692c"
+                "reference": "31a95eca472cbff66bb310f1475eb805bb598353"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/9b8cd2cbf2751bbba2f936af7b7085475285692c",
-                "reference": "9b8cd2cbf2751bbba2f936af7b7085475285692c",
+                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/31a95eca472cbff66bb310f1475eb805bb598353",
+                "reference": "31a95eca472cbff66bb310f1475eb805bb598353",
                 "shasum": ""
             },
             "require": {
@@ -231,7 +231,6 @@
                 "league/flysystem": "Required to use the Flysystem local and FTP drivers (^1.0).",
                 "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^1.0).",
                 "league/flysystem-cached-adapter": "Required to use the Flysystem cache (^1.0).",
-                "league/flysystem-rackspace": "Required to use the Flysystem Rackspace driver (^1.0).",
                 "league/flysystem-sftp": "Required to use the Flysystem SFTP driver (^1.0)."
             },
             "type": "library",
@@ -257,7 +256,7 @@
             ],
             "description": "The Illuminate Filesystem package.",
             "homepage": "https://laravel.com",
-            "time": "2019-04-11T14:22:55+00:00"
+            "time": "2019-05-07T15:53:21+00:00"
         },
         {
             "name": "illuminate/support",
@@ -265,12 +264,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "fe658b6365fdd2d9cfe50c207f262d93bf3cfd3d"
+                "reference": "1551998742eb5f7964088490b5ee2840ec5c05e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/fe658b6365fdd2d9cfe50c207f262d93bf3cfd3d",
-                "reference": "fe658b6365fdd2d9cfe50c207f262d93bf3cfd3d",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/1551998742eb5f7964088490b5ee2840ec5c05e2",
+                "reference": "1551998742eb5f7964088490b5ee2840ec5c05e2",
                 "shasum": ""
             },
             "require": {
@@ -318,7 +317,7 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2019-04-30T11:02:20+00:00"
+            "time": "2019-05-08T15:31:00+00:00"
         },
         {
             "name": "illuminate/view",
@@ -368,55 +367,6 @@
             "description": "The Illuminate View package.",
             "homepage": "https://laravel.com",
             "time": "2019-04-18T21:12:06+00:00"
-        },
-        {
-            "name": "jenssegers/blade",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/jenssegers/blade.git",
-                "reference": "9bdc78519dfe0e2c54093cb63dbd746d1eb6c7e5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jenssegers/blade/zipball/9bdc78519dfe0e2c54093cb63dbd746d1eb6c7e5",
-                "reference": "9bdc78519dfe0e2c54093cb63dbd746d1eb6c7e5",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/view": "^5.1",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "mockery/mockery": "^0.9",
-                "phpunit/phpunit": "^4.0|^5.0",
-                "satooshi/php-coveralls": "^1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Jenssegers\\Blade\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jens Segers",
-                    "homepage": "https://jenssegers.com"
-                }
-            ],
-            "description": "The standalone version of Laravel's Blade templating engine for use outside of Laravel.",
-            "keywords": [
-                "blade",
-                "laravel",
-                "render",
-                "template",
-                "view"
-            ],
-            "time": "2018-04-03T11:37:18+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -477,6 +427,47 @@
                 "time"
             ],
             "time": "2019-04-27T18:04:27+00:00"
+        },
+        {
+            "name": "philo/laravel-blade",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhiloNL/Laravel-Blade.git",
+                "reference": "e26fe170f5be187a3fe6717d6c7caed79b9e9e99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhiloNL/Laravel-Blade/zipball/e26fe170f5be187a3fe6717d6c7caed79b9e9e99",
+                "reference": "e26fe170f5be187a3fe6717d6c7caed79b9e9e99",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/events": "~5",
+                "illuminate/view": "~5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Philo\\Blade\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Philo Hermans",
+                    "email": "me@philohermans.com"
+                }
+            ],
+            "description": "Use the simple and yet powerful Laravel Blade templating engine as a standalone component.",
+            "keywords": [
+                "blade",
+                "laravel"
+            ],
+            "time": "2016-05-04T17:59:07+00:00"
         },
         {
             "name": "psr/container",
@@ -863,12 +854,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "f6c9d504a22af0065d59bc12080bf8abc479c945"
+                "reference": "db5a2d8c6cfec010c9ef58c20d58bea6e3fd5d69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/f6c9d504a22af0065d59bc12080bf8abc479c945",
-                "reference": "f6c9d504a22af0065d59bc12080bf8abc479c945",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/db5a2d8c6cfec010c9ef58c20d58bea6e3fd5d69",
+                "reference": "db5a2d8c6cfec010c9ef58c20d58bea6e3fd5d69",
                 "shasum": ""
             },
             "require": {
@@ -930,14 +921,14 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2019-05-01T12:55:49+00:00"
+            "time": "2019-05-08T20:09:06+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "jenssegers/blade": 20
+        "philo/laravel-blade": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

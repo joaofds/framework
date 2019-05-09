@@ -8,7 +8,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $this->view->title = "..::uFramework::..";
-        $this->viewRender('home/index');
+        $title = "..::uFramework!::..";
+        $this->view('pages.home', [
+            'title' => $title
+        ]);
     }
 }
