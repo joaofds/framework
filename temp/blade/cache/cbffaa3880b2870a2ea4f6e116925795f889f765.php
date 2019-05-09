@@ -1,1 +1,0 @@
-<div id="copyright text-right">© Copyright 2019 - João Ferreira | jo4o.fds@gmail.com</div><?php /**PATH /home/joaofds/Documentos/projetos/framework/resources/views/includes/footer.blade.php ENDPATH**/ ?>
