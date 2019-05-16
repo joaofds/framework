@@ -8,7 +8,10 @@ class PostsController extends Controller
 {
     public function index()
     {
-        echo "Posts Page";
+        $title = "..::Posts::..";
+        $this->view('pages.posts', [
+            'title' => $title
+        ]);
     }
 
     public function show($id, $request)

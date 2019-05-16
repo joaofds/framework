@@ -5,6 +5,7 @@
 
 </head>
 <body>
+@include('includes.navbar')
     <div class="container">
         <div id="main" class="row">
             @yield('content')

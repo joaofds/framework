@@ -17,6 +17,7 @@ abstract class Controller
      * $page Nome da página para renderizar
      * $param Array com os parametros para passar para página
      */
+    
 
     public function view($page, $param = [])
     {
@@ -24,7 +25,7 @@ abstract class Controller
         $viewPath = "../resources/views";
         $cacheDir = "../temp/blade/cache";
         $blade  = new Blade($viewPath, $cacheDir);
-        
+
         // Renderiza a página
         echo $blade->view()->make($page, $param)->render();
     }

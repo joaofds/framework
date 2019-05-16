@@ -5,4 +5,5 @@
 <title>{{ $title }}</title>
 
 <!-- load bootstrap from local -->
-<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
