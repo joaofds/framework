@@ -4,7 +4,7 @@ Projeto que visa a criação de um micro framework mvc para fins didáticos.
 
 ---
 
-### F.A.Q. 
+### Release 
 
 - Implemented
     - Routes
