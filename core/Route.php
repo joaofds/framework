@@ -13,7 +13,9 @@
 
 namespace Core;
 
-class Route
+use Core\Controller;
+
+class Route extends Controller
 {
     private $routes;
 
@@ -115,7 +117,7 @@ class Route
                     break;
             }
         } else {
-            echo "Ops... não encontramos essa página em nosso site.";
+            $this->view('error.404');
         }
     }
 }
