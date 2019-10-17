@@ -74,7 +74,8 @@ class Route extends Controller
         // Ex: [0] => 'post/{id}/show' [1] => 'PostsController@show'
         foreach ($this->routes as $route) {
             $routeArray = explode('/', $route[0]);
-
+            $param = [];
+            
             // Verifica se há parâmetros passados na rota,
             // se houver, captura o mesmo e envia com a nova rota.
             for ($i=0; $i < count($routeArray); $i++) { 
