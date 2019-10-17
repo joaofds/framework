@@ -23,7 +23,7 @@ abstract class Controller
     {
         // Informa o diretório das views e cache
         $viewPath = "../resources/views";
-        $cacheDir = "../temp/blade/cache";
+        $cacheDir = "../temp";
         $blade  = new Blade($viewPath, $cacheDir);
 
         // Renderiza a página
