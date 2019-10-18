@@ -9,7 +9,7 @@ use Philo\Blade\Blade;
  * Blade Template Engine.
  */
 
-abstract class Controller
+abstract class AbsBlade
 {
     /**
      * Função que renderiza uma página
