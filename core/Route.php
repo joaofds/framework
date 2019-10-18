@@ -118,7 +118,7 @@ class Route extends Controller
                     break;
             }
         } else {
-            $this->view('error.404');
+            Container::pageNotFound();
         }
     }
 }
