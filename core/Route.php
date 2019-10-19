@@ -28,7 +28,7 @@ class Route extends Controller
     }
 
     // Separando... Rota | Controller @ Metodo com explode()
-    // e remonta a rota.
+    // e remonta a rota em $newArray.
     private function setRoutes($routes)
     {
         foreach ($routes as $route) {
@@ -43,6 +43,8 @@ class Route extends Controller
     private function getRequest()
     {
         $obj = new \stdClass;
+        $obj->get = new \stdClass;
+        $obj->post = new \stdClass;
 
         foreach ($_GET as $key => $value) {
             $obj->get->$key = $value;
@@ -98,7 +100,7 @@ class Route extends Controller
 
         // Chamada para a classe Container que irá instanciar todos
         // os nossos Controllers e Actions.
-        if ($found) {
+        if (isset($found)) {
             $controller = Container::newController($controller);
 
             // Switch para contagem de parâmetros passados na url.

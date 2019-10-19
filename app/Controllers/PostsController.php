@@ -15,6 +15,6 @@ class PostsController extends Controller
     {
         echo $id . '<br>';
         echo $request->get->nome . '<br>';
-        echo $request->get->idade . '<br>';
+        echo $request->get->sexo . '<br>';
     }
 }

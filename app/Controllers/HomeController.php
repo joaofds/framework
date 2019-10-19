@@ -8,6 +8,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        echo "Home Controller";
+        $title = "..:: Micro Framework ::..";
+        $this->view('pages.home', [
+            'title' => $title
+        ]);
     }
 }
