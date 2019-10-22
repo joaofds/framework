@@ -14,7 +14,7 @@ return [
 
      'mysql' => [
          'host' => 'localhost',
-         'database' => 'login',
+         'database' => 'framework_php',
          'user' => 'root',
          'pass' => '',
          'charset' => 'utf8',
