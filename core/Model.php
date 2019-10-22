@@ -18,6 +18,7 @@ abstract class Model
         $this->pdo = $pdo;
     }
 
+    //Retorna todos os dados de uma tabela.
     public function All()
     {
         $query = "SELECT * FROM {$this->table}";
