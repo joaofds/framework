@@ -10,6 +10,7 @@
                 de grandes frameworks que trabalham com o padrão MVC.
             </p>
             Créditos: Micro Framework do Zero - Canal TJG Web do Youtube <br />
+            {{$dir}}
         </div>
     </div>
 @stop
