@@ -2,19 +2,21 @@
 
 namespace App\Controllers;
 
-use App\Models\Post;
+use Core\Container;
 use Core\Controller;
-use Core\DB;
 
 class PostsController extends Controller
 {
     public function index()
     {
-        $model = new Post(DB::getCon());
+        $model = Container::getModel('Post');
         $posts = $model->All();
-        echo '<pre>';
-        var_dump($posts);
-        echo '</pre>';
+        $title = "Posts";
+        
+        $this->view('pages.posts',[
+            'posts' => $posts,
+            'title' => $title
+        ]);
     }
 
     public function show($id, $request)
