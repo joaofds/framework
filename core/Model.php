@@ -26,6 +26,6 @@ abstract class Model
         $stmt->execute();
         $result = $stmt->fetchAll();
         $stmt->CloseCursor();
-        $return $result;
+        return $result;
     }
 }
