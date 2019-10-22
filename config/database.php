@@ -3,7 +3,7 @@
 return [
     /**
      * Options drivers (sqlite, mysql)
-     * 
+     * Change 'driver' => 'mysql' or 'sqlite'
      */
 
      'driver'=> 'mysql',
